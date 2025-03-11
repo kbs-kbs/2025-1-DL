@@ -1,2 +1,1 @@
-# 2025-DLP
-2025 Deep Learning Programming
+# 2025-1-DLP
