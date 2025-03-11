@@ -15,11 +15,11 @@
 
 
 ### 외부 데이터 소스 의존성
-- TensorFlow: GPU 가속을 사용하는 경우, CUDA와 cuDNN 라이브러리가 필요합니다. 이들은 NVIDIA 웹사이트에서 다운로드해야 하며, 오프라인 설치를 위해 미리 준비해야 합니다.
+- TensorFlow: 오프라인 환경에서 GPU 가속을 사용하는 경우, CUDA와 cuDNN 라이브러리가 필요합니다. 이들은 NVIDIA 웹사이트에서 다운로드해야 하며, 설치를 위해 미리 준비해야 합니다.
 
-- NumPy: 고성능 연산을 위해 BLAS/LAPACK 라이브러리(OpenBLAS, MKL 등)에 의존합니다. 대부분의 배포판에 포함되어 있지만, 특정 상황에서는 별도로 설치해야 할 수도 있습니다.
+- NumPy: 고성능 연산을 위해 BLAS/LAPACK 라이브러리(OpenBLAS, MKL 등)에 의존합니다. 대부분의 배포판에 포함되어 있지만, 오프라인 환경에서는 별도로 설치해야 할 수도 있습니다.
 
-- `!git clone https://github.com/taehojo/data.git`
+- 수술 환자 데이터: `!git clone https://github.com/taehojo/data.git`
 
 ### 코드
 
