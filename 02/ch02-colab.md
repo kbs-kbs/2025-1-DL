@@ -53,13 +53,13 @@ history=model.fit(X, y, epochs=5, batch_size=16)
 
 ### 모델 사용
 ```python
-# 새로운 환자의 데이터를 입력합니다 (예: 16개의 특성을 가진 데이터)
-# 실제 데이터 형식에 맞게 값을 수정해야 합니다.
+# 새로운 환자 데이터 예측
 new_patient_data = np.array([[45, 2, 3, 1, 0, 0, 1, 0, 0, 1, 2, 3, 1, 0, 1, 0]])
+prediction_prob = model.predict(new_patient_data)
 
-# 모델을 사용하여 예측 수행
-prediction = model.predict(new_patient_data)
+# 확률을 이항 분류 결과로 변환 (0.5를 임계값으로 사용)
+prediction_class = (prediction_prob > 0.5).astype(int)
 
-# 결과 출력
-print("새로운 환자의 생존 확률: {:.2f}%".format(prediction[0][0] * 100))
+print("예측 확률: {:.2f}%".format(prediction_prob[0][0] * 100))
+print("이항 분류 결과:", "생존" if prediction_class[0][0] == 1 else "사망")
 ```
