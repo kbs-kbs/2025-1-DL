@@ -63,3 +63,15 @@ prediction_class = (prediction_prob > 0.5).astype(int)
 print("예측 확률: {:.2f}%".format(prediction_prob[0][0] * 100))
 print("이항 분류 결과:", "생존" if prediction_class[0][0] == 1 else "사망")
 ```
+
+prediction_prob > 0.5:
+
+이 부분은 prediction_prob 배열의 각 요소를 0.5와 비교합니다.
+
+결과는 불리언(Boolean) 배열로, 각 요소가 0.5보다 크면 True, 그렇지 않으면 False입니다.
+
+.astype(int):
+
+이 메소드는 불리언 배열을 정수 배열로 변환합니다.
+
+True는 1로, False는 0으로 변환됩니다.
