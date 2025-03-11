@@ -21,6 +21,8 @@
 
 - `!git clone https://github.com/taehojo/data.git`
 
+### 코드
+
 ```python
 from tensorflow.keras.models import Sequential  # 텐서플로의 케라스 API에서 필요한 함수들을 불러옵니다.
 from tensorflow.keras.layers import Dense       # 데이터를 다루는 데 필요한 라이브러리를 불러옵니다.
