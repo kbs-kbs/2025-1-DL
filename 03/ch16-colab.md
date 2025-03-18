@@ -8,6 +8,10 @@
 |---|---|---|---|---|---|
 |Python|3.11.11|tensorflow|2.18.0|keras.models.Sequential|전체 모델 구조를 정의|
 |||||keras.layers.Dense|모델 내부의 개별 층을 구성|
+|||||keras.callbacks.ModelCheckpoint|모델 내부의 개별 층을 구성|
+|||||keras.callbacks.EarlyStopping|모델 내부의 개별 층을 구성|
+|||||keras.datasets.mnist|모델 내부의 개별 층을 구성|
+|||||keras.keras.utils|모델 내부의 개별 층을 구성|
 |||numpy|1.26.4||데이터 불러오기|
 |||matplotlib|3.10.0||데이터 시각화|
 
