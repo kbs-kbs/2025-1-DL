@@ -1,4 +1,9 @@
 선언: 컴파일러에게 알려줌
+확장자별 라이브러리 구분
+.lib : 윈도우 / 정적 라이브러리
+.dll : 윈도우 / 동적 라이브러리
+
+
 
 ## 목표
 진찰 기록으로 폐암 수술 환자의 생존율을 예측하는 모델 생성
@@ -31,12 +36,14 @@
 ## 코드
 
 ### 모델 생성
-```python
+```bash
+git clone https://github.com/taehojo/data.git
+```
+
+```python title:ch02-colab.ipynb
 from tensorflow.keras.models import Sequential  # 텐서플로의 케라스 API에서 필요한 함수들을 불러옵니다.
 from tensorflow.keras.layers import Dense       # 데이터를 다루는 데 필요한 라이브러리를 불러옵니다.
 import numpy as np
-
-!git clone https://github.com/taehojo/data.git   # 깃허브에 준비된 데이터를 가져옵니다.
 
 Data_set = np.loadtxt("./data/ThoraricSurgery3.csv", delimiter=",")  # 수술 환자 데이터를 불러옵니다.
 X = Data_set[:,0:16]                                                 # 환자의 진찰 기록을 X로 지정합니다.
@@ -52,7 +59,7 @@ history=model.fit(X, y, epochs=5, batch_size=16)
 ```
 
 ### 모델 사용
-```python
+```python title:ch02-colab.ipynb
 # 새로운 환자 데이터 예측
 new_patient_data = np.array([[45, 2, 3, 1, 0, 0, 1, 0, 0, 1, 2, 3, 1, 0, 1, 0]])
 prediction_prob = model.predict(new_patient_data)
