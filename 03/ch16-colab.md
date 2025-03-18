@@ -11,7 +11,7 @@
 |||||keras.callbacks.ModelCheckpoint|모델 내부의 개별 층을 구성|
 |||||keras.callbacks.EarlyStopping|모델 내부의 개별 층을 구성|
 |||||keras.datasets.mnist|모델 내부의 개별 층을 구성|
-|||||keras.keras.utils|모델 내부의 개별 층을 구성|
+|||||keras.utils|모델 내부의 개별 층을 구성|
 |||numpy|1.26.4||데이터 불러오기|
 |||matplotlib|3.10.0||데이터 시각화|
 
