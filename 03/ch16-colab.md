@@ -2,13 +2,14 @@
 진찰 기록으로 폐암 수술 환자의 생존율을 예측하는 모델 생성
 
 ## 사용 라이브러리
+2025-03-18 기준 코랩 환경
+
 |언어|버전|라이브러리|버전|모듈/클래스|용도|
 |---|---|---|---|---|---|
 |Python|3.11.11|tensorflow|2.18.0|keras.models.Sequential|전체 모델 구조를 정의|
 |||||keras.layers.Dense|모델 내부의 개별 층을 구성|
 |||numpy|1.26.4||데이터 불러오기|
-
-
+|||matplotlib|3.10.0||데이터 시각화|
 
 ## 외부 리소스 의존성
 |라이브러리|외부 리소스|용도|
@@ -35,7 +36,6 @@ from tensorflow.keras.utils import to_categorical
 
 import matplotlib.pyplot as plt
 import numpy as np
-import os
 
 # MNIST 데이터를 불러옵니다. 
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
