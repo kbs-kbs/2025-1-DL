@@ -4,17 +4,19 @@
 진찰 기록으로 폐암 수술 환자의 생존율을 예측하는 모델 생성
 
 ## 사용 라이브러리
-|언어|버전|라이브러리|버전|사용 모듈|용도|
+|언어|버전|라이브러리|버전|모듈/클래스|용도|
 |---|---|---|---|---|---|
-|Python|3.11.11|tensorflow.keras.models|2.18.0|Sequential|전체 모델 구조를 정의|
-|||tensorflow.keras.layers|2.18.0|Dense|모델 내부의 개별 층을 구성|
+|Python|3.11.11|tensorflow|2.18.0|keras.models.Sequential|전체 모델 구조를 정의|
+|||||keras.layers.Dense|모델 내부의 개별 층을 구성|
 |||numpy|1.26.4||데이터 불러오기|
 
 
 
 ## 외부 리소스 의존성
-- TensorFlow: 오프라인 환경에서 GPU 가속을 사용하는 경우, CUDA와 cuDNN 라이브러리가 필요합니다. 이들은 NVIDIA 웹사이트에서 다운로드해야 하며, 설치를 위해 미리 준비해야 합니다.
-- 수술 환자 데이터: `!git clone https://github.com/taehojo/data.git`
+|라이브러리|외부 리소스|용도|
+|---|---|---|
+|tensorflow|CUDA, cuDNN|GPU 가속|
+|수술 환자 데이터|https://github.com/taehojo/data.git||
 
 ## 단계
 
