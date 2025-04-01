@@ -37,9 +37,20 @@ X_train = X_train.reshape(X_train.shape[0], 784)
 X_train = X_train.astype('float64')/255
 ```
 
-6. **4, 5 합침**
+6. **4, 5 합치기**
 ```python
 X_train = X_train.reshape(X_train.shape[0], 784).astype('float64')/255
+```
+
+7. **y_train 확인**
+```python
+stdout.write(f"class: {y_train[0]}")
+```
+
+8. **\[5]를 \[0,0,0,0,0,1,0,0,0,0] 이러한 원-핫 인코딩 방식으로 변환**
+```python
+y_train = to_categorical(y_train, 10)
+y_test = to_categorical(y_test, 10)
 ```
 
 
