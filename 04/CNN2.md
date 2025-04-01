@@ -1,3 +1,9 @@
+|언어|라이브러리|버전|컴포넌트/모듈|클래스|용도|
+|---|---|---|---|---|---|
+|Python|tensorflow||tensorflow.keras.datasets|mnist|MNIST 손글씨 데이터셋 활용|
+
+
+
 ```
 from tensorflow.keras.datasets import mnist
 ```
