@@ -1,3 +1,10 @@
+```
+from tensorflow.keras.datasets import mnist
+```
+
+
+
+
 
 ```
 model.add(Conv2D(32, kernel_size=(3,3), input_shape=(28,28,1), activation='relu'))
