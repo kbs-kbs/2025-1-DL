@@ -33,11 +33,14 @@ X_train = X_train.reshape(X_train.shape[0], 784)
 
 5. **정규화**
    - 케라스는 데이터를 0에서 1 사이의 값으로 변환한 후 구동할 때 최적의 성능을 보임
-```
+```python
 X_train = X_train.astype('float64')/255
-stdout.write(f"{X_train[0]}")
 ```
 
+6. **4, 5 합침**
+```python
+X_train = X_train.reshape(X_train.shape[0], 784).astype('float64')/255
+```
 
 
 ```
